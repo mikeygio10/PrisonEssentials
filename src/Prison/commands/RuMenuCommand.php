@@ -24,7 +24,7 @@ class RuMenuCommand extends PluginCommand{
         return true;
     }
 
-    public function Menu($sender){
+    public function ruMenu($sender){
         $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
         $form = $api->createSimpleForm(function (Player $sender, int $data = null) {
             $result = $data;
