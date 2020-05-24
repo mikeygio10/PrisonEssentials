@@ -15,7 +15,6 @@ use Prison\commands\RankupCommand;
 use Prison\commands\SellCommand;
 use Prison\commands\SetprestigeCommand;
 use Prison\commands\SetrankCommand;
-use Prison\commands\RuMenuCommand;
 use pocketmine\utils\Config;
 
 class Main extends PluginBase{
@@ -50,8 +49,7 @@ class Main extends PluginBase{
             new RankupCommand("rankup", $this),
             new SellCommand("msell", $this),
             new SetprestigeCommand("setprestige", $this),
-            new SetrankCommand("setrank", $this),
-	    new RuMenuCommand("rumenu", $this)
+            new SetrankCommand("setrank", $this)
         ]);
         $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
     }
