@@ -38,11 +38,11 @@ class RuMenuCommand extends PluginCommand{
            
         });
         $form->setTitle("RANKING UP MENU");
-        $content = "Your current rank: ".$this->plugin->getRank($sender);
-        $content .= "Your current prestige: ".$this->plugin->getPrestige($sender);
-        $content .= "Next rank: ".$this->plugin->getNextRank($sender);
-        $content .= "Next prestige: ".$this->plugin->getNextPrestige($sender);
-        $content .= "Money missing for rank up: ".$this->plugin->calculateMoney($sender);
+        $content = "Your current rank: ".$this->plugin->getRank($sender)."\n";
+        $content .= "Your current prestige: ".$this->plugin->getPrestige($sender)."\n";
+        $content .= "Next rank: ".$this->plugin->getNextRank($sender)."\n";
+        $content .= "Next prestige: ".$this->plugin->getNextPrestige($sender)."\n";
+        $content .= "Money missing for rank up: ".$this->plugin->calculateMoney($sender)."\n";
         $form->setContent($content);
         $form->addButton("Exit the Menu");
         $form->sendToPlayer($sender);
