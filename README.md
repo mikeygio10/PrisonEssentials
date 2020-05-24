@@ -33,6 +33,9 @@ If you encounter Bugs do not forget to message me on Discord: DaRealAqua#1987
 - DaRealAqua
 - AlexItz16
 
+### TODO:
+- Ui Menu (YES)
+- Scoreboard (NO)
 ### Socials:
 - Discord: DaRealAqua#1987
 - Instagram: DaRealAqua
