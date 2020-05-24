@@ -35,8 +35,7 @@ class RuMenuCommand extends PluginCommand{
                 case 0:
                     break;
             }
-            $this->plugin->getRank($sender), $this->plugin->getPrestige($sender), $this->plugin->getNextRank($sender), $this->plugin->getNextPrestige($sender), $this->plugin->calculateMoney($sender)], $this->plugin->getConfig()->get("mystatus-message")));
-
+           
         });
         $form->setTitle("RANKING UP MENU");
         $content = "Your current rank: ".$this->plugin->getRank($sender);
