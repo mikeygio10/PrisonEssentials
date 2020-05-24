@@ -20,6 +20,7 @@ If you encounter Bugs do not forget to message me on Discord: DaRealAqua#1987
 - /mystatus
 - /setrank
 - /setprestige
+- /rumenu (new update!)
 
 ### Plugin API'S:
 - | $this->getRank($sender); = (Show what Rank you are)| 
