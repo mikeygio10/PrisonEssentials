@@ -1,4 +1,52 @@
 ---
+# Example creating ranks for prison:
+#ranks:
+#  "Rank-Name": Rank-UP-Price$ 
+ranks:
+  "A": 0
+  "B": 30000
+  "C": 60000
+  "D": 120000
+  "E": 500000
+  "F": 2000000
+  "G": 3500000
+  "H": 4000000
+  "I": 8500000
+  "J": 10000000
+  "K": 21000000
+  "L": 30000000
+  "M": 45000000
+  "N": 68000000
+  "O": 200000000
+  "P": 380000000
+  "Q": 450000000
+  "R": 580000000
+  "S": 630000000
+  "T": 780000000
+  "U": 840000000
+  "V": 980000000
+  "W": 1100000000
+  "X": 2000000000
+  "Y": 3700000000
+  "Z": 8000000000
+  
+# Example creating prestige ranks for prison:
+#prestiges:
+#  "Rank-Name": Rank-UP-Price$   
+#The list of all prestiges with relative name and cost, you can add as many prestiges as you want
+prestiges:
+  "P1": 1000000000
+  "P2": 2000000000
+  "P3": 5000000000
+  "P4": 5000000000
+  "P5": 5000000000
+  "P6": 5000000000
+  "P7": 5000000000
+  "P8": 5000000000
+  "P9": 5000000000
+  "P10": 10000000000
+
+# Add the world here to keep players from breaking: Place, Place, and take damage.
 worlds:
   - "A" 
   - "B" 
@@ -30,6 +78,7 @@ worlds:
   - "premium"
   - "MAPA3"
   - "crate"
+# Add the world to keep players from attacking.  
 pvp:
   - "A" 
   - "B" 
@@ -61,6 +110,7 @@ pvp:
   - "MAPA3"
   - "crate"
   - "plot"
+# Add people to make players able to use the sell command  
 sell:
   - "A" 
   - "B" 
@@ -92,84 +142,62 @@ sell:
   - "MAPA3"
   - "crate"
   - "plot"  
-#Message sent when a player tries to use a prison-related command outside the prison world.
-not-in-prison-world: "§8[§c!§8] §cYou are not in Mines world, you can't use that command here."
-#The default tag for a player who doesn't have any prestige
-no-prestige-tag: "-"
-#The message displayed when a player tries to rankup but he doesn't have enough money. Use {money} to get the missing money to rankup.
-not-enough-money: "§8[§c!§8] §cYou don't have enough money to rankup. You need {money} more money to rankup."
-#The message displayed when a player rankups. Use {rank} to get the player's new rank
-rankup-message: "§8[§b!§8] §bCongratulations! §rYou are now rank §b{rank}"
-#The message sent to all the players on the server when a player rankups. Use {name} to get the player's name, and {rank} to get the new rank.
-rankup-broadcast: "§8[§b!§8] §b{name} §ris now rank §b{rank}"
-#Set to true to reset player's money on prestige, otherwise set to false
-reset-money-on-prestige: true
-#The message sent to warn the player about the money reset on prestige
-reset-money-message: "§8[§c!§8] §cAll your moneys will be resetted!"
-#The message displayed when a player prestiges. Use {prestige} to get the player's prestige
-prestige-message: "§8[§b!§8] §bCongratulations! §rYou are now §b{prestige}"
-#The message sent to all the players on the server when a player prestiges. Use {name} to get the player's name, and {prestige} to get the new prestige.
-prestige-broadcast: "§8[§b!§8] §b{name} §ris now §b{prestige}"
-#The message sent to the player after /sell command is issued. Use {money} to get the amount of money received.
-money-gained: "§8[§b!§8] §rYou got §b{money}§r from Selling Items"
 #The permission standard for every rank to set when a player rankups. Use {rank} to get the new rank.
 permission: "essentials.warps.{rank}"
+
+#Message sent when a player tries to use a prison-related command outside the prison world.
+not-in-prison-world: "§8[§c!§8] §cYou are not in Mines world, you can't use that command here."
+
+#The default tag for a player who doesn't have any prestige
+no-prestige-tag: "-"
+
+#The message displayed when a player tries to rankup but he doesn't have enough money. Use {money} to get the missing money to rankup.
+not-enough-money: "§8[§c!§8] §cYou don't have enough money to rankup. You need {money} more money to rankup."
+
+#The message displayed when a player rankups. Use {rank} to get the player's new rank
+rankup-message: "§8[§b!§8] §bCongratulations! §rYou are now rank §b{rank}"
+
+#The message sent to all the players on the server when a player rankups. Use {name} to get the player's name, and {rank} to get the new rank.
+rankup-broadcast: "§8[§b!§8] §b{name} §ris now rank §b{rank}"
+
+#Set to true to reset player's money on prestige, otherwise set to false
+reset-money-on-prestige: true
+
+#The message sent to warn the player about the money reset on prestige
+reset-money-message: "§8[§c!§8] §cAll your moneys will be resetted!"
+
+#The message displayed when a player prestiges. Use {prestige} to get the player's prestige
+prestige-message: "§8[§b!§8] §bCongratulations! §rYou are now §b{prestige}"
+
+#The message sent to all the players on the server when a player prestiges. Use {name} to get the player's name, and {prestige} to get the new prestige.
+prestige-broadcast: "§8[§b!§8] §b{name} §ris now §b{prestige}"
+
+#The message sent to the player after /sell command is issued. Use {money} to get the amount of money received.
+money-gained: "§8[§b!§8] §rYou got §b{money}§r from Selling Items"
+
 #The base multiplier value (default: 1.0)
 multiplier-base: 1.0
+
 #Set to true to increase the multiplier when an user prestiges, else to false
 multiplier-increment-on-prestige: true
+
 #The increase of the multiplier for every prestige. Default: 0.5
 multiplier-increase: 0.5
+
 #The message sent when a player doesn't have permissions to run a command. Use {command} to get the command he typed.
 no-permission-message: "§8[§c!§8] §rYou don't have permission to use the§c {command} §rcommand."
+
 #The format of the message sent in the chat. Use {prestige} to get the player's prestige, {rank} to get the player's rank and
 #{default format} to get the default chat format. Note: if you use PureChat, {default format} will use PureChat's format
 chat-format: "§l§b➳§r §e{prestige} §7| §6{rank}§r{default format}"
+
 #The message sent when a player uses /mystatus command. Use {rank} to get the player's rank, {prestige} to get the player's prestige,
 #{next rank} to get the player's next rank, {next prestige} to get the player's next prestige, and {money missing} to get the money missing to next rank/prestige.
 mystatus-message: "§7--------------------\n   §bPrison Status\n §rRank:§b {rank}\n §rPrestige:§b {prestige}\n §rNext rank:§b {next rank}\n §rNext prestige:§b {next prestige}\n §rMoney missing:§b {money missing}\n§7--------------------"
 #List of all prison ranks with relative name and rankup cost, you can add as many ranks as you want
-ranks:
-  "A": 0
-  "B": 30000
-  "C": 60000
-  "D": 120000
-  "E": 500000
-  "F": 2000000
-  "G": 3500000
-  "H": 4000000
-  "I": 8500000
-  "J": 10000000
-  "K": 21000000
-  "L": 30000000
-  "M": 45000000
-  "N": 68000000
-  "O": 200000000
-  "P": 380000000
-  "Q": 450000000
-  "R": 580000000
-  "S": 630000000
-  "T": 780000000
-  "U": 840000000
-  "V": 980000000
-  "W": 1100000000
-  "X": 2000000000
-  "Y": 3700000000
-  "Z": 8000000000
-  
-#The list of all prestiges with relative name and cost, you can add as many prestiges as you want
-prestiges:
-  "P1": 1000000000
-  "P2": 2000000000
-  "P3": 5000000000
-  "P4": 5000000000
-  "P5": 5000000000
-  "P6": 5000000000
-  "P7": 5000000000
-  "P8": 5000000000
-  "P9": 5000000000
-  "P10": 10000000000
-  
+
+
+# Here you add what you want to sell!
 #The selling cost of every block/item. Note: the price is relative to 1 block/item. Format: "id:meta": selling cost
 blocks:
 #Mine A Blocks Prices
