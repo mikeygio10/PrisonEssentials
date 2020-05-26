@@ -143,6 +143,8 @@ sell:
   - "crate"
   - "plot"  
 #The permission standard for every rank to set when a player rankups. Use {rank} to get the new rank.
+#Add the permission of a warp plugin that you use to give permission to the player when it ranks up.
+#Usefull plugins for prison: SimpleWarps, WarpsPro
 permission: "essentials.warps.{rank}"
 
 #Message sent when a player tries to use a prison-related command outside the prison world.
