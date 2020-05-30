@@ -46,12 +46,12 @@ class Main extends PluginBase{
         }
         $this->players = json_decode(file_get_contents($this->getDataFolder() . "players.json"), true);
         $this->getServer()->getCommandMap()->registerAll("prison", [
-            new MystatusCommand("mystat", $this),
+            new MystatusCommand("stats", $this),
             new RankupCommand("rankup", $this),
-            new SellCommand("msell", $this),
+            new SellCommand("sell", $this),
             new SetprestigeCommand("setprestige", $this),
             new SetrankCommand("setrank", $this),
-	    new RuMenuCommand("rumenu", $this)
+	    new RuMenuCommand("ruhelp", $this)
         ]);
         $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
     }
