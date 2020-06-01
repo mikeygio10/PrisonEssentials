@@ -50,7 +50,7 @@ class Main extends PluginBase{
             new RankupCommand("rankup", $this),
             new SellCommand("sell", $this),
             new SetprestigeCommand("setprestige", $this),
-            new SetrankCommand("setrank", $this),
+            new SetrankCommand("setmine", $this),
 	    new RuMenuCommand("ruhelp", $this)
         ]);
         $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
